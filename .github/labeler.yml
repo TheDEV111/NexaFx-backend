@@ -101,11 +101,12 @@ ci:
           - '.github/**'
 
 dependencies:
-  - any-glob-to-any-file:
-      - 'package.json'
-      - 'package-lock.json'
-      - 'tsconfig.json'
-      - 'nest-cli.json'
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'package.json'
+          - 'package-lock.json'
+          - 'tsconfig.json'
+          - 'nest-cli.json'
 
 backend:
   - changed-files:
